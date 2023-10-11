@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: cadetblue;
+}
+
+
+button[type="reset"]{
+  margin-left: 20px;
+}
+
