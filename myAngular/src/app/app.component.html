@@ -1,7 +1,24 @@
-<h1>{{title}} is running</h1>
+<!-- <h1>{{title}} is running</h1>
 <ul>
   <li *ngFor = "let fruit of fruits">
     {{fruits}}</li>
 </ul>
 
-<app-root></app-root>
+<app-root></app-root> -->
+
+<!-- creating forms in html-->
+
+
+<form action="" method="post">
+  Name: <input type="text" name="name"><br><br>
+  Email:<input type="email" name="email"><br><br>
+  Password:<input type="password" name="pwd"><br><br>
+  Gender:<select name="gender">
+    <option value="">Select gender:</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    </select><br><br>
+  Hobbies:<textarea rows="4" cols="50"></textarea><br><br>
+  <button type="submit" button>submit</button>
+  <button type="reset">Cancel</button>
+</form>
