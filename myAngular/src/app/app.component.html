@@ -1,24 +1,76 @@
-<!-- <h1>{{title}} is running</h1>
-<ul>
-  <li *ngFor = "let fruit of fruits">
-    {{fruits}}</li>
-</ul> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-<!-- <app-root></app-root> -->
+    <!--  =======LINK TO CSS ======== -->
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
 
-<!-- creating forms in html-->
+html, body{
+    width: 100%;
+    height: 100%;
+}
 
+.wrapper{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
 
-<form action="" method="post">
-  Name: <input type="text" name="name"><br><br>
-  Email:<input type="email" name="email"><br><br>
-  Password:<input type="password" name="pwd"><br><br>
-  Gender:<select name="gender">
-    <option value="">Select gender:</option>
-    <option value="male">Male</option>
-    <option value="female">Female</option>
-    </select><br><br>
-  Hobbies:<textarea rows="4" cols="50"></textarea><br><br>
-  <button type="submit" button>submit</button>
-  <button type="reset">Cancel</button>
-</form>
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background: #00000041;
+}
+nav li{
+    display: inline;
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    margin-right:20px ;
+    text-transform: uppercase;
+    font-weight: 550;
+    color: #000;
+}
+nav li a:hover{
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">※</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#port">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="home" class="home">
+            Hello, I'm Kabutey Manasseh Kwame.(Mr_Kabuteyy)
+            <br>
+            I am  working on angular
+            <br>
+            <button type="menu">Learn More...</button>
+            <img src="" alt="">
+        </section>
+        <section id="port" class="port"></section>
+    </div>
+</body>
+</html>
